@@ -22,7 +22,27 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <h1>lets start</h1>
+    <!-- form part -->
+    <div class="logo w-[200px] mx-auto pt-32">
+        <img src="./assets/Logo-full.png" alt="">
+    </div>
+    <div class="from pt-10">
+         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-md mx-auto rounded-lg">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold">Mobile Number</label>
+          <input id="mobile-number" type="email" class=" input rounded-full bg-base-200" maxlength="11" minlength="11" placeholder="11 digit mobile Number" />
+          <br>
+
+          <label class="label text-neutral font-bold">Password</label>
+          <input id="pin-number" type="password" class="input rounded-full bg-base-200" maxlength="4" placeholder="4 digit pin" />
+          
+          <button id="btn" class="btn btn-neutral mt-4 rounded-full bg-primary border-none">Login</button>
+        </fieldset>
+      </div>
+    </div>
+    </div>
+    <script src="./script/login.js"></script>
 </body>
 
 </html>
