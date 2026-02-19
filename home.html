@@ -22,14 +22,14 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <header class="border-b-2 border-gray-300 " >
+    <header class="border-b-2 border-gray-300 sticky top-0 bg-base-200 z-10" >
         <section class="w-11/12 mx-auto py-5 flex justify-between items-center">
             <div class="left flex gap-1">
             <div>
                 <img class="w-[60px]" src="./assets/logo.png" alt="">
             </div>
             <div>
-                <h1 class="font-bold text-2xl">$45000</h1>
+                <h1 class="font-bold text-2xl">$<span id="balance">45000</span></h1>
                 <p class="text-neutral/50">Available Balance</p>
             </div>
         </div>
@@ -79,14 +79,14 @@
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-neutral text-[16px] font-bold">Agent Number</label>
-          <input id="cashout-number" type="text" class=" input rounded-full bg-base-200 w-full" maxlength="11" minlength="11" placeholder="11 digit mobile Number" />
+          <input id="cashout-number"  type="text" class=" input rounded-full bg-base-200 w-full" maxlength="11" minlength="11" placeholder="11 digit mobile Number" />
           <br>
           <label class="label text-neutral text-[16px] font-bold">Amount</label>
-          <input id="cashout-amount" type="number" class=" input rounded-full bg-base-200 w-full"  placeholder="Enter amount to withdraw" />
+          <input id="cashout-amount"  type="number" class=" input rounded-full bg-base-200 w-full"  placeholder="Enter amount to withdraw" />
           <br>
 
           <label class="label text-neutral text-[16px] font-bold">Password</label>
-          <input id="cashout-pin" type="password" class="input rounded-full bg-base-200 w-full" maxlength="4" placeholder="4 digit pin" />
+          <input id="cashout-pin"  type="password" class="input rounded-full bg-base-200 w-full" maxlength="4" placeholder="4 digit pin" />
           
           <button id="cashout-btn" class="btn btn-neutral mt-4 rounded-full bg-primary border-none text-[16px]">Withdraw Money</button>
         </fieldset>
