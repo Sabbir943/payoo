@@ -8,7 +8,7 @@ document.getElementById('btn')
     // console.log(pin)
     if(number==='01825692898'&&pin==='1234'){
         alert('success');
-        window.location.assign('/home.html')
+        window.location.assign('home.html')
     }
     else{
         alert('failed, try again');
